@@ -18,3 +18,6 @@ assert(regex.links.test('https://google.com'), 'Google is a valid url even with 
 assert(regex.links.test('http://facebook.com/mysite.html?q=hello'), 'URLs can contain information following .com');
 assert(!regex.links.test('www.google.com'), 'URLs should start with http');
 
+//Testing html
+assert(regex.html.test('<td class="summary" style="text-align:left">"<a href="/wiki/Diversity_Day_(The_Office)" title="Diversity Day (The Office)">Diversity Day</a>"</td>'), 'This works in the browser');
+
